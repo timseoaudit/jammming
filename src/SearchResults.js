@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, Row, Card} from 'react-bootstrap';
+import { Container, Row, Card } from 'react-bootstrap';
 
 
 //SearchResults component

@@ -1,6 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container, InputGroup, FormControl, Button} from 'react-bootstrap';
 import {useState} from 'react';
+import Search from './Search';
 
 function SearchBar() {
     const [searchInput, setSearchInput] = useState('');
@@ -16,12 +17,12 @@ function SearchBar() {
             type="imput"
             onKeyPress= {event => {
               if (event.key === 'Enter') {
-                console.log('Enter key pressed!');
+                Search.search(searchInput);
               }
             }}
             onChange={event => setSearchInput(event.target.value)}
           />
-          <Button onClick={event => { console.log("Clicked Button")}}>
+          <Button onClick={Search}>
             Search
           </Button>
         </InputGroup>
