@@ -4,7 +4,7 @@ import React, {useState} from 'react';
 
 //SearchResults component
 const SearchResults = (searchRequest) => {
-    const {result, setResult} = useState([]);
+    const [result, setResult] = useState([]);
     setResult(searchRequest);
     return (
         <div className='searchResults'>

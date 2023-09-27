@@ -6,8 +6,8 @@ import SearchResults from './SearchResults';
 // Playlist component
 
 const Playlist = (addedTrack) => {
-   const {playlistName, setPlaylistName} = useState('New Playlist');
-    const {playlistTracks, setPlaylistTracks} = useState([]);
+   const [playlistName, setPlaylistName] = useState('New Playlist');
+    const [playlistTracks, setPlaylistTracks] = useState([]);
     setPlaylistTracks(playlistTracks.push(addedTrack));
     
     return (
