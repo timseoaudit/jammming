@@ -1,7 +1,7 @@
 // Module to create the Playlist component
 //Imports
 import React, {useState} from 'react';
-import SearchResults from './SearchResults';
+
 
 // Playlist component
 

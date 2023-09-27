@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Container, InputGroup, FormControl, Button, Row, Card } from 'react-bootstrap';
-import {useState, useEffect} from 'react';
+import { Container, InputGroup, FormControl, Button} from 'react-bootstrap';
+import {useState} from 'react';
 
 function SearchBar() {
     const [searchInput, setSearchInput] = useState('');
