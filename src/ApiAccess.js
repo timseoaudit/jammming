@@ -18,6 +18,7 @@ let authParameters =  {
         .then(response => response.json())
         .then(data => setToken(data.access_token));
 }, []);
+return token;
 };
 
 export default ApiFetch;
