@@ -1,15 +1,21 @@
-//Module to create SearchResults component
-//Imports
-import React, {useState} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container, Row, Card} from 'react-bootstrap';
+
 
 //SearchResults component
-const SearchResults = (searchRequest) => {
-    const [result, setResult] = useState([]);
-    setResult(searchRequest);
+function SearchResults() {
     return (
-        <div className='searchResults'>
-            <h1>Search Results</h1>
-            <p>{result}</p>
+        <div>        
+            <Container>
+                <Row className= 'mx-2 row row-cols-1'>
+                    <Card.Body>
+                        <Card.Img  src="#"/>
+                       <Card.Titel>Track Title Here</Card.Titel> 
+                       <Card.Artist>Artist Name Here</Card.Artist>
+                       <Card.Album>Album Name Here</Card.Album>
+                    </Card.Body>
+                </Row>
+            </Container>   
         </div>
     )
 };
